@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weiguanjishu.domain.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="com.weiguanjishu.domain.model.User">
+        <result column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="age" property="age"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="id">
+        insert into user (user_name,age,address )
+        VALUES (
+        #{userName},
+        #{age},
+        #{address}
+        )
+    </insert>
+
+    <select id="queryAllUser" resultMap="userResultMap">
+        SELECT * FROM user
+    </select>
+
+    <select id="queryUserById" resultMap="userResultMap">
+        SELECT * FROM user  WHERE id=#{id}
+    </select>
+
+
+    <select id="querUserByPage" resultMap="BaseResultMap" >
+       SELECT * FROM user
+    </select>
+
+</mapper>
