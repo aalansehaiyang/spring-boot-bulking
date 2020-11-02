@@ -26,13 +26,20 @@ public class UserController {
     private UserService userService;
 
 
+    /**
+     * http://localhost:8090/add_user
+     */
     @GetMapping("/add_user")
     public Object add() {
         User user = User.builder().userName("TomGE").age(29).address("上海").build();
-        Long uid = userMapper.addUser(user);
-        return uid;
+        Long successCount = userMapper.addUser(user);
+        return "用户id: " + user.getId();
     }
 
+    /**
+     * 分页查询用户
+     * http://localhost:8090/querUserByPage?pageNo=2&pageSize=4
+     */
     @RequestMapping("/querUserByPage")
     public PageInfo<User> page(@RequestParam("pageNo") int pageNo, @RequestParam("pageSize") int pageSize) {
         Page<User> users = userService.querUserByPage(pageNo, pageSize);
