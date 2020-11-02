@@ -36,7 +36,9 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.0</version>
         </dependency>
+
         <!--pagehelper -->
+        <!-- SpringBoot Mybatis PageHelper插件报错 https://blog.csdn.net/h985161183/article/details/79800737 -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
@@ -56,7 +58,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>provided</scope>
+            <version>1.18.6</version>
         </dependency>
 
     </dependencies>
