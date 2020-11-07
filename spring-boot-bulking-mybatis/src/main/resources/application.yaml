@@ -1,0 +1,36 @@
+server:
+  port: 8090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ds0?characterEncoding=utf-8
+    username: root
+    password: 111111
+    # Hikari config
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 200
+      idle-timeout: 60000
+      pool-name: MarketingHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 2000
+      connection-test-query: select 1
+
+
+mybatis:
+  config-location: classpath:config/mybatis-config.xml
+
+logging:
+  level:
+    com.weiguanjishu.domain.mapper: debug
+
+#pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
