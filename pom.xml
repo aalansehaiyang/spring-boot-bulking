@@ -13,7 +13,13 @@
     <artifactId>spring-boot-bulking</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    
+
+    <modules>
+        <module>spring-boot-bulking-mybatis</module>
+        <module>spring-boot-bulking-druid</module>
+    </modules>
+
+
     <repositories>
         <repository>
             <id>alimaven</id>
@@ -41,13 +47,6 @@
         </dependency>
 
     </dependencies>
-
-     <modules>
-        <module>spring-boot-bulking-mybatis</module>
-        <module>spring-boot-bulking-druid</module>
-    </modules>
-
-
 
 
     <build>
