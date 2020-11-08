@@ -1,0 +1,46 @@
+server:
+  port: 8090
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-druid
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/ds0?characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 111111
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: -1
+      use-global-data-source-stat: true
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      filters: stat,wall,log4j
+
+
+mybatis:
+  config-location: classpath:config/mybatis-config.xml
+
+logging:
+  level:
+    com.weiguanjishu.domain.mapper: debug
+
+#pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
