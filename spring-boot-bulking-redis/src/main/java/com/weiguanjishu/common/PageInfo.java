@@ -8,6 +8,9 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * @author 微信公众号：微观技术
+ */
 
 @Data
 public class PageInfo<T> implements Serializable {
