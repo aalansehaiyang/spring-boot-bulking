@@ -19,6 +19,7 @@
         <module>spring-boot-bulking-druid</module>
         <module>spring-boot-bulking-redis</module>
         <module>spring-boot-bulking-redis-lock</module>
+        <module>spring-boot-bulking-sharding-sphere</module>
     </modules>
 
 
