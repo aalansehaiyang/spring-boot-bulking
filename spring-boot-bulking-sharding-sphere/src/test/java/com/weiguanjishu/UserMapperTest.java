@@ -63,6 +63,7 @@ public class UserMapperTest {
     public void queryAllUserByPage() {
         int pageNo = 3;
         int pageSize = 2;
+        // 框架自动分页
         PageHelper.startPage(pageNo, pageSize);
         List<User> users = userMapper.queryAllUser();
         users.sort((t1, t2) -> {

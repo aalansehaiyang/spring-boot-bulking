@@ -47,7 +47,7 @@ public class LockService {
      * 释放锁
      * <p>
      * true：成功释放
-     * false：释放锁释放，也有可能是自动过期
+     * false：释放锁失败，也有可能是自动过期
      */
     public boolean unLock(String key, String value) {
         key = prefixKey + key;
