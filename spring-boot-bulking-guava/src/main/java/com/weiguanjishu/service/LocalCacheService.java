@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author 微信公众号：微观技术
+ */
+
 @Service
 public class LocalCacheService {
 

@@ -21,6 +21,7 @@
         <module>spring-boot-bulking-redis-lock</module>
         <module>spring-boot-bulking-sharding-sphere</module>
         <module>spring-boot-bulking-guava</module>
+        <module>spring-boot-bulking-caffeine</module>
     </modules>
 
 
