@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-elasticsearch
+
+spring:
+  application:
+    name: spring-boot-bulking-elasticsearch
+  elasticsearch:
+    rest:
+      uris: 127.0.0.1:9200
+      read-timeout: 5s
+
+logging:
+  level:
+    root: info
