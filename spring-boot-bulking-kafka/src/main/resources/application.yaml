@@ -1,0 +1,38 @@
+server:
+  port: 8090
+
+
+Spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    #      - 192.168.0.14:9093
+    producer:
+      retries: 3  # 生产者发送失败时，重试次数
+      acks: 1 # 应答级别:多少个分区副本备份完成时向生产者发送ack确认(可选0、1、all/-1)
+      batch-size: 16384   # 批量大小
+      buffer-memory: 33554432  # 生产端缓冲区大小
+      # 当生产端积累的消息达到batch-size或接收到消息linger.ms后,生产者就会将消息提交给kafka
+      # linger.ms为0表示每接收到一条消息就提交给kafka,这时候batch-size其实就没用了
+      properties:
+        linger:
+          ms: 0
+      # 生产者消息key和消息value的序列化处理类
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #  自定义分区器
+      # spring.kafka.producer.properties.partitioner.class=com.felix.kafka.producer.CustomizePartitioner
+    consumer:
+      group-id: tomge-consumer-group  # 默认消费者group id
+      # 当kafka中没有初始offset或offset超出范围时将自动重置offset
+      # earliest:重置为分区中最小的offset;
+      # latest:重置为分区中最新的offset(消费分区中新产生的数据);
+      auto-offset-reset: earliest
+      enable-auto-commit: true  # 是否自动提交offset
+      # 提交offset延时(接收到消息后多久提交offset)
+      auto:
+        commit:
+          interval:
+            ms: 1000
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
