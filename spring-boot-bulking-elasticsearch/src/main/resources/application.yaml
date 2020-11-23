@@ -11,6 +11,8 @@ spring:
   elasticsearch:
     rest:
       uris: 127.0.0.1:9200
+      #      username: spring-boot-bulking-elasticsearch
+      #      password: '234234237'
       read-timeout: 5s
 
 logging:

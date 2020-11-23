@@ -1,0 +1,10 @@
+server:
+  port: 8090
+
+logging:
+  level:
+    root: info
+
+pulsar:
+  service:
+    url: pulsar://127.0.0.1:6650
