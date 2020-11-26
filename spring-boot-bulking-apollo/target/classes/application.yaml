@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: spring-boot-bulking-apollo
+
+
+apollo:
+  meta: http://127.0.0.1:8080
+  bootstrap:
+    enabled: true
+app:
+  id: spring-boot-bulking-apollo
+
+
