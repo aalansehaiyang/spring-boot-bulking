@@ -1,0 +1,12 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: spring-boot-bulking-elasticjob
+
+elasticjob:
+  zk: 127.0.0.1:2181
+  namespace: ej
+
+
