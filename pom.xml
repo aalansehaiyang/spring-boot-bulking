@@ -28,6 +28,7 @@
         <module>spring-boot-bulking-apollo</module>
         <module>spring-boot-bulking-rabbitmq</module>
         <module>spring-boot-bulking-elasticjob</module>
+        <module>spring-boot-bulking-ehcache</module>
     </modules>
 
 

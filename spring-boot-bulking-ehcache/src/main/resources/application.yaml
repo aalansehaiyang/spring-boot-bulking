@@ -1,0 +1,12 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: spring-boot-bulking-ehcache
+
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:/ehcache.xml
+
