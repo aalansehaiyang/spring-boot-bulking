@@ -3,7 +3,7 @@
 <ehcache name="test">
 
     <diskStore path="java.io.tmpdir"/>
-    
+
     <defaultCache
             maxEntriesLocalHeap="1000"
             eternal="false"
