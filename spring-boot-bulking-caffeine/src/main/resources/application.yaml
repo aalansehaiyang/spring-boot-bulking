@@ -1,0 +1,56 @@
+server:
+  port: 8090
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-redis
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/ds0?characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 111111
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: -1
+      use-global-data-source-stat: true
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      filters: stat,wall,log4j
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    #    password: abEvH46*YsH&S25d89
+    lettuce:
+      pool:
+        maxIdle: 1000  # 连接池中的最大空闲连接
+        minIdle: 2  # 连接池中的最小空闲连接
+        maxWait: 10  # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        maxActive: 1000 # 连接池最大连接数（使用负值表示没有限制）
+
+mybatis:
+  config-location: classpath:config/mybatis-config.xml
+
+logging:
+  level:
+    com.weiguanjishu.domain.mapper: debug
+
+#pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
