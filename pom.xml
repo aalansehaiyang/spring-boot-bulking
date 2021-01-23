@@ -30,6 +30,7 @@
         <module>spring-boot-bulking-elasticjob</module>
         <module>spring-boot-bulking-ehcache</module>
         <module>spring-boot-bulking-fastdfs</module>
+        <module>spring-boot-bulking-rocketmq</module>
     </modules>
 
 

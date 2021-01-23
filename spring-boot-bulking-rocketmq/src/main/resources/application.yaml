@@ -1,0 +1,25 @@
+server:
+  port: 9071
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-rocketmq
+
+spring:
+  application:
+    name: spring-boot-bulking-rocketmq
+
+
+rocketmq:
+  name-server: localhost:9876
+  consumer:
+    topic: maker-order-topic
+    group: my-group1
+  producer:
+    group: p-my-group1
+
+
+
+logging:
+  level:
+    root: info
