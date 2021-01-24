@@ -31,6 +31,7 @@
         <module>spring-boot-bulking-ehcache</module>
         <module>spring-boot-bulking-fastdfs</module>
         <module>spring-boot-bulking-rocketmq</module>
+        <module>spring-boot-bulking-nacos</module>
     </modules>
 
 

@@ -1,0 +1,15 @@
+server:
+  port: 9071
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-nacos
+
+spring:
+  application:
+    name: spring-boot-bulking-nacos
+
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+
