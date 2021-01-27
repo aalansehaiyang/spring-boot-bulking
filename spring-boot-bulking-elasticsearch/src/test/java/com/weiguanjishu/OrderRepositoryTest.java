@@ -2,7 +2,7 @@ package com.weiguanjishu;
 
 import com.alibaba.fastjson.JSON;
 import com.weiguanjishu.model.OrderModel;
-import com.weiguanjishu.entity.OrderRepository;
+import com.weiguanjishu.repository.OrderRepository;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;

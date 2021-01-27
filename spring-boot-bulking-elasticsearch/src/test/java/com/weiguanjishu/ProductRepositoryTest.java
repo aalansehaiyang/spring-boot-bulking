@@ -2,7 +2,7 @@ package com.weiguanjishu;
 
 import com.alibaba.fastjson.JSON;
 import com.weiguanjishu.model.ProductModel;
-import com.weiguanjishu.entity.ProductRepository;
+import com.weiguanjishu.repository.ProductRepository;
 import org.assertj.core.util.Lists;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
