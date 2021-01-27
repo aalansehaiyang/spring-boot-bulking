@@ -2,13 +2,10 @@ package com.weiguanjishu;
 
 import com.alibaba.fastjson.JSON;
 import com.weiguanjishu.model.OrderModel;
-import com.weiguanjishu.model.ProductModel;
-import com.weiguanjishu.repository.OrderRepository;
-import org.assertj.core.util.Lists;
+import com.weiguanjishu.entity.OrderRepository;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;
-import org.junit.jupiter.api.Order;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;

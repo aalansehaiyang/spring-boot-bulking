@@ -1,0 +1,20 @@
+server:
+  port: 9071
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-mongo
+
+spring:
+  application:
+    name: spring-boot-bulking-mongo
+  # 数据源配置
+  data:
+    mongodb:
+      #主机地址
+      host: 127.0.0.1
+      #数据库名称
+      database: tomge
+      #端口号
+      port: 27017
+

@@ -1,4 +1,4 @@
-package com.weiguanjishu.repository;
+package com.weiguanjishu.entity;
 
 
 import com.weiguanjishu.model.OrderModel;
