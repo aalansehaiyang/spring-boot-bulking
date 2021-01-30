@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+
+spring:
+  phoenix:
+    datasource:
+      url: http://localhost:8765
+      driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+
+
+#mybatis:
+#  config-location: classpath:config/mybatis-config.xml
+
+logging:
+  level:
+    com.weiguanjishu.domain.mapper: debug
+

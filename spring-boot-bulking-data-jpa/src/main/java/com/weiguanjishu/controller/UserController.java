@@ -37,6 +37,8 @@ public class UserController {
     }
 
     /**
+     * 如果想生效，需要将User类中的@GeneratedValue(strategy = GenerationType.IDENTITY)注释掉
+     *
      * http://localhost:8090/add_user_with_id
      */
     @RequestMapping("/add_user_with_id")

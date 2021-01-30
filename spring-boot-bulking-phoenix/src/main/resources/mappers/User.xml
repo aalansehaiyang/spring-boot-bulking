@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weiguanjishu.domain.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="com.weiguanjishu.domain.model.User">
+        <result column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="age" property="age"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <!-- 插入用户 -->
+    <update id="addUser" parameterType="com.weiguanjishu.domain.model.User">
+
+        UPSERT into user(id,user_name,age,address )
+        VALUES (#{id}, #{userName}, #{age}, #{address} )
+    </update>
+
+
+</mapper>

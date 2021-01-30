@@ -34,6 +34,7 @@
         <module>spring-boot-bulking-nacos</module>
         <module>spring-boot-bulking-mongo</module>
         <module>spring-boot-bulking-data-jpa</module>
+        <module>spring-boot-bulking-phoenix</module>
     </modules>
 
 
