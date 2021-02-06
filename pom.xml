@@ -35,6 +35,8 @@
         <module>spring-boot-bulking-mongo</module>
         <module>spring-boot-bulking-data-jpa</module>
         <module>spring-boot-bulking-phoenix</module>
+        <module>spring-boot-bulking-okhttp</module>
+        <module>spring-boot-bulking-httpclient</module>
     </modules>
 
 
