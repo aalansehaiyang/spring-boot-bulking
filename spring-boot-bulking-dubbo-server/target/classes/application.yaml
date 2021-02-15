@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-boot-bulking-dubbo-server
+server:
+  port: 8091
+
+## Dubbo 服务提供者配置
+dubbo:
+  application:
+    name: spring-boot-bulking-dubbo-server
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  timeout: 10000
+  scan:
+    base-packages: com.weiguanjishu.service

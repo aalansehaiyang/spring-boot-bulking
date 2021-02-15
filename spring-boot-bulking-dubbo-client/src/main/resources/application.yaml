@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-boot-bulking-dubbo-client
+server:
+  port: 8098
+
+## Dubbo
+dubbo:
+  application:
+    name: spring-boot-bulking-dubbo-client
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20888
+  timeout: 10000
+
