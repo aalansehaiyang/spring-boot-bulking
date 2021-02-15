@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package com.example.grpc;
+
+option java_multiple_files = true;
+
+// 接口类
+service HelloService {
+    rpc hello (HelloRequest) returns (HelloResponse);
+}
+
+
+message HelloRequest {
+    string name = 1 ;
+    int32 age = 2;
+    repeated string hobbies = 3;
+    map<string, string> tags = 4;
+
+}
+
+message HelloResponse {
+    string greeting = 1;
+}

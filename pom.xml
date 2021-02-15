@@ -37,6 +37,9 @@
         <module>spring-boot-bulking-phoenix</module>
         <module>spring-boot-bulking-okhttp</module>
         <module>spring-boot-bulking-httpclient</module>
+        <module>spring-boot-bulking-grpc-proto</module>
+        <module>spring-boot-bulking-grpc-server</module>
+        <module>spring-boot-bulking-grpc-client</module>
     </modules>
 
 
