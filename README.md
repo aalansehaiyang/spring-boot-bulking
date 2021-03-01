@@ -11,9 +11,11 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 |序号|文章标题|
 |---|---|
 |1| [Spring Boot 集成 Mybatis](https://mp.weixin.qq.com/s/VLFh7HdnkaUyawTEW1kBmg) |
-|2|[Spring Boot 集成 ElasticSearch，实现高性能搜索](https://mp.weixin.qq.com/s/2sZhc1_7nF8M-7wnDR86ZA)|
-|3|[还在用Mybatis? Spring Data JPA 让你的开发效率提升数倍！](https://mp.weixin.qq.com/s/-1YjKkQixr34W1ATrOV3DQ)|
-|4|[SpringBoot整合高性能微服务框架 gRPC](https://mp.weixin.qq.com/s/wHXPyWNmPql8x0wUTei_Dg)|
+|2|[数据库连接池为什么首选Druid](https://mp.weixin.qq.com/s/PxmgNKdJBITy3F8r84Rb6w)|
+|3|[Spring Boot 集成 ElasticSearch，实现高性能搜索](https://mp.weixin.qq.com/s/2sZhc1_7nF8M-7wnDR86ZA)|
+|4|[还在用Mybatis? Spring Data JPA 让你的开发效率提升数倍！](https://mp.weixin.qq.com/s/-1YjKkQixr34W1ATrOV3DQ)|
+|5|[SpringBoot整合高性能微服务框架 gRPC](https://mp.weixin.qq.com/s/wHXPyWNmPql8x0wUTei_Dg)|
+|6|[开箱即用，一键集成 Redis 缓存](https://mp.weixin.qq.com/s/iwJh3kJsNLfKS-Z2WMLOlA)|
 
 
 
