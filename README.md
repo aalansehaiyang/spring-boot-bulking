@@ -16,6 +16,7 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 |4|[还在用Mybatis? Spring Data JPA 让你的开发效率提升数倍！](https://mp.weixin.qq.com/s/-1YjKkQixr34W1ATrOV3DQ)|
 |5|[SpringBoot整合高性能微服务框架 gRPC](https://mp.weixin.qq.com/s/wHXPyWNmPql8x0wUTei_Dg)|
 |6|[开箱即用，一键集成 Redis 缓存](https://mp.weixin.qq.com/s/iwJh3kJsNLfKS-Z2WMLOlA)|
+|7|[Redis 实现分布式锁真的安全吗？](https://mp.weixin.qq.com/s/WSm_owe1BzJFWgwfN3Uetw)|
 
 
 
