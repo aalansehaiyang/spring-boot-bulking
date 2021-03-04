@@ -42,7 +42,9 @@
         <module>spring-boot-bulking-grpc-client</module>
         <module>spring-boot-bulking-dubbo-api</module>
         <module>spring-boot-bulking-dubbo-server</module>
-         <module>spring-boot-bulking-dubbo-client</module>
+        <module>spring-boot-bulking-dubbo-client</module>
+        <module>spring-boot-bulking-tool</module>
+
     </modules>
 
 

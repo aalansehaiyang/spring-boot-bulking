@@ -1,0 +1,7 @@
+server:
+  port: 8093
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-tool
+
+
