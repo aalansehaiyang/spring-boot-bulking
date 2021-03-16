@@ -17,5 +17,6 @@ public class OrderModel {
     private Double amount;
     private Long buyerUid;
     private String shippingAddress;
+    private long startTime;
 
 }
