@@ -18,6 +18,7 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 |6|[开箱即用，一键集成 Redis 缓存](https://mp.weixin.qq.com/s/iwJh3kJsNLfKS-Z2WMLOlA)|
 |7|[Redis 实现分布式锁真的安全吗？](https://mp.weixin.qq.com/s/WSm_owe1BzJFWgwfN3Uetw)|
 |8|[ShardingSphere解决海量数据分库分表](https://mp.weixin.qq.com/s/ImM-Hc_rfZe9T28B6wD38g)|
+|9|[10分钟掌握RocketMQ的核心知识](https://mp.weixin.qq.com/s/1w-uMhscCCN7gppWuOoRVw)|
 
 
 
