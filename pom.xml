@@ -44,6 +44,10 @@
         <module>spring-boot-bulking-dubbo-server</module>
         <module>spring-boot-bulking-dubbo-client</module>
         <module>spring-boot-bulking-tool</module>
+        <module>spring-boot-bulking-seata-account</module>
+        <module>spring-boot-bulking-seata-business</module>
+        <module>spring-boot-bulking-seata-order</module>
+        <module>spring-boot-bulking-seata-storage</module>
 
     </modules>
 
