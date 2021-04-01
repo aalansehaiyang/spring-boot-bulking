@@ -24,7 +24,7 @@ public class LocalCacheService {
     public static LoadingCache<Long, User> loadingCache = Caffeine.newBuilder()
             // 初始的缓存空间大小
             .initialCapacity(5)
-            // 最大空间大小
+            // 缓存的最大条数
             .maximumSize(10)
             .expireAfterWrite(4, TimeUnit.SECONDS)
             .expireAfterAccess(10, TimeUnit.SECONDS)

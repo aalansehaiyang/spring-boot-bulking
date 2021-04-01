@@ -20,6 +20,8 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 |8|[ShardingSphere解决海量数据分库分表](https://mp.weixin.qq.com/s/ImM-Hc_rfZe9T28B6wD38g)|
 |9|[10分钟掌握RocketMQ的核心知识](https://mp.weixin.qq.com/s/1w-uMhscCCN7gppWuOoRVw)|
 |10|[业务无侵入框架Seata， 解决分布式事务问题](https://mp.weixin.qq.com/s/p209cAseNKxo6e5JToVAJg)|
+|11|[Spring Boot 集成 本地缓存Guava框架](https://mp.weixin.qq.com/s/XRKqVOjHeQ0IZjj14cykdw)|
+|12|[高性能本地缓存组件 Caffeine Cache](https://mp.weixin.qq.com/s/-iXJ0RnB-pSaRGnu8n1jSg)|
 
 
 
