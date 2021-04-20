@@ -24,7 +24,7 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 |12|[高性能本地缓存组件 Caffeine Cache](https://mp.weixin.qq.com/s/-iXJ0RnB-pSaRGnu8n1jSg)|
 |13|[Spring Boot 集成 Kafka](https://mp.weixin.qq.com/s/pzPNSTJYwAAubJviiFuoKw)|
 |14|[10分钟掌握RocketMQ的核心知识](https://mp.weixin.qq.com/s/1w-uMhscCCN7gppWuOoRVw)|
-
+|15|[为什么放弃Kafka，选择Pulsar?](https://mp.weixin.qq.com/s/msBUvoNn_o_49I59CtSNgw)|
 
 持续更新中...
 
