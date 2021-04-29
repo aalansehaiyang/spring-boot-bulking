@@ -25,6 +25,8 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 |13|[Spring Boot 集成 Kafka](https://mp.weixin.qq.com/s/pzPNSTJYwAAubJviiFuoKw)|
 |14|[10分钟掌握RocketMQ的核心知识](https://mp.weixin.qq.com/s/1w-uMhscCCN7gppWuOoRVw)|
 |15|[为什么放弃Kafka，选择Pulsar?](https://mp.weixin.qq.com/s/msBUvoNn_o_49I59CtSNgw)|
+|16|分布式配置中心选型，为什么选择Apollo？|
+
 
 
 共30多篇，持续更新中...，最新内容扫描 ↓↓↓ 二维码，关注 [微观技术](https://github.com/aalansehaiyang/spring-boot-bulking) 查看
