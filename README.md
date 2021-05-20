@@ -35,6 +35,6 @@ Spring Boot 作为主流微服务框架，拥有成熟的社区生态。集成�
 ### 关于作者
 
 
-![image](https://i.niupic.com/images/2020/04/04/7hig.jpg)
+![image](weiguanjishu.jpg)
 
 **微信公众号：微观技术，分享各个行业优秀的架构设计方案、技术心得、心路历程等，欢迎各位技术达人关注、经验交流**
