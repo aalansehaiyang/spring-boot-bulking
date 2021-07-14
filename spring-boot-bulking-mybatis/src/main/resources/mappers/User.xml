@@ -20,6 +20,20 @@
         VALUES ( #{userName}, #{age}, #{address} )
     </insert>
 
+
+    <insert id="insertBatch">
+        <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+
+        insert into user
+        (user_name,age,address )
+        VALUES
+        <foreach collection ="list" item="user" index= "index" separator =",">
+            ( #{user.userName}, #{user.age}, #{user.address} )
+        </foreach >
+    </insert>
+
     <!-- 查询所有用户 -->
     <select id="queryAllUser" resultMap="userResultMap">
         SELECT * FROM user
@@ -34,5 +48,14 @@
     <select id="querUserByPage" resultMap="userResultMap">
        SELECT * from user
     </select>
+
+    <delete id="deleteUser" >
+        delete  from user
+         WHERE id in
+        <foreach collection="idList" open="(" separator="," close=")" item="item">
+            #{item}
+        </foreach>
+
+    </delete>
 
 </mapper>

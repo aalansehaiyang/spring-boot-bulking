@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author 微信公众号：微观技术
@@ -46,5 +48,36 @@ public class UserController {
         PageInfo<User> pageInfo = new PageInfo<>(users);
         return pageInfo;
     }
+
+    @GetMapping("/insert_batch")
+    public Object insertBatch(@RequestParam("batch") int batch) {
+
+        // 设置批次 batch = 100000，共插入 1000W 条数据
+        for (int j = 1; j <= batch; j++) {
+            List<User> userList = new ArrayList<>();
+            for (int i = 1; i <= 100; i++) {
+                int age = i % 2 == 0 ? 28 : 29;
+                User user = User.builder().userName("Tom哥-" + ((j - 1) * 100 + i)).age(age).address("上海").build();
+                userList.add(user);
+            }
+            userMapper.insertBatch(userList);
+        }
+        return "success";
+    }
+
+    @GetMapping("/delete_batch")
+    public Object deleteBatch(@RequestParam("batch") int batch) {
+
+        // 设置批次 batch = 100000
+        for (int j = 1; j <= batch; j++) {
+            List<Long> idList = new ArrayList<>();
+            for (int i = 1; i <= 100; i += 2) {
+                idList.add((long) ((j - 1) * 100 + i));
+            }
+            userMapper.deleteUser(idList);
+        }
+        return "success";
+    }
+
 
 }

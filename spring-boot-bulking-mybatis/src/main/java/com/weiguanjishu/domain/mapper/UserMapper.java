@@ -3,6 +3,7 @@ package com.weiguanjishu.domain.mapper;
 import com.github.pagehelper.Page;
 import com.weiguanjishu.domain.model.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,6 +15,10 @@ import java.util.List;
 public interface UserMapper {
 
     Long addUser(User user);
+
+    Long insertBatch(List<User> userList);
+
+    void deleteUser(@Param("idList") List<Long> idList);
 
     List<User> queryAllUser();
 
