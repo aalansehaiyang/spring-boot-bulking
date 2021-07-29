@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weiguanjishu.domain.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="com.weiguanjishu.domain.model.User">
+        <result column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="age" property="age"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <!-- 插入用户 -->
+    <insert id="addUser" parameterType="com.weiguanjishu.domain.model.User">
+
+        <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+
+        insert into user (user_name,age,address )
+        VALUES ( #{userName}, #{age}, #{address} )
+    </insert>
+
+    <!-- 查询所有用户 -->
+    <select id="queryAllUser" resultMap="userResultMap">
+        SELECT * FROM user
+    </select>
+
+    <select id="queryUserById" resultMap="userResultMap">
+        SELECT * FROM user  WHERE id=#{id}
+    </select>
+
+
+    <!-- 分页查询用户 -->
+    <select id="querUserByPage" resultMap="userResultMap">
+       SELECT * from user
+    </select>
+
+</mapper>
