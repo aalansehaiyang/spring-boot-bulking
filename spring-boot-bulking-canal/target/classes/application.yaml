@@ -1,0 +1,9 @@
+server:
+  port: 8090
+
+app:
+  log:
+    dir: /Users/onlyone/open-github/p/spring-boot-bulking/spring-boot-bulking-canal
+
+
+
