@@ -25,11 +25,10 @@ public class SlowRatioCircuitBreakerService {
         }
         Entry entry = null;
         int handleTime = 0;
+        handleTime = ThreadLocalRandom.current().nextInt(40, 70);
         try {
             entry = SphU.entry(taskResource);
-
             // RT: [40ms, 60ms)
-            handleTime = ThreadLocalRandom.current().nextInt(40, 70);
             pass.incrementAndGet();
             System.out.println("任务【 " + num + " 】正常处理，耗时： " + handleTime + "  ！ 总统计量：total=" + total + " pass=" + pass);
             sleep(handleTime);

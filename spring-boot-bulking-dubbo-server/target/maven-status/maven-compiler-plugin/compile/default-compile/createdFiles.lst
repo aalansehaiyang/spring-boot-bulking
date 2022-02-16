@@ -1,0 +1,3 @@
+com/weiguanjishu/StartApplication.class
+com/weiguanjishu/service/DubboServiceImpl.class
+com/weiguanjishu/annotation/GrpcService.class

@@ -25,7 +25,7 @@ public class DegradeRuleConfig {
                 //慢调用比例模式下为慢调用临界 RT（超出该值计为慢调用）；异常比例/异常数模式下为对应的阈值
                 .setCount(50)
                 // 熔断时长，单位为 s
-                .setTimeWindow(12)
+                .setTimeWindow(10)
                 // 慢调用比例阈值，仅慢调用比例模式有效（1.8.0 引入）
                 .setSlowRatioThreshold(0.6)
                 //熔断触发的最小请求数，请求数小于该值时即使异常比率超出阈值也不会熔断（1.7.0 引入）
@@ -46,7 +46,7 @@ public class DegradeRuleConfig {
                 //熔断触发的最小请求数，请求数小于该值时即使异常比率超出阈值也不会熔断（1.7.0 引入）
                 .setMinRequestAmount(10)
                 //统计时长（单位为 ms），如 60*1000 代表分钟级（1.8.0 引入）
-                .setStatIntervalMs(5000);
+                .setStatIntervalMs(6000);
         rules.add(rule2);
 
         DegradeRuleManager.loadRules(rules);

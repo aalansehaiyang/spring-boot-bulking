@@ -1,0 +1,9 @@
+com/weiguanjishu/domain/mapper/UserMapper.class
+com/weiguanjishu/domain/model/User.class
+com/weiguanjishu/common/RedisAnnotationConfig.class
+com/weiguanjishu/service/CacheService.class
+com/weiguanjishu/domain/model/User$UserBuilder.class
+com/weiguanjishu/common/PageInfo.class
+com/weiguanjishu/StartApplication.class
+com/weiguanjishu/common/RedisConfig.class
+com/weiguanjishu/service/UserService.class
