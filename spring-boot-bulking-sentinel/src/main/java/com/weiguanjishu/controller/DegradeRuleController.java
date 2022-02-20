@@ -16,6 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadPoolExecutor;
 
+
+/**
+ * 更新熔断规则
+ */
 @RequestMapping("/rule")
 @RestController
 public class DegradeRuleController {
